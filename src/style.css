@@ -5,3 +5,7 @@
 .gap-large {
    gap: 20px;
 }
+
+.letter-spaced {
+   letter-spacing: 0.25rem !important;
+}
