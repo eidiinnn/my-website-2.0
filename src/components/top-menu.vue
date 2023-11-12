@@ -26,11 +26,25 @@
             <li>
               <v-menu open-on-hover>
                 <template #activator="{ props }">
-                  <v-btn flat v-bind="props"> lang </v-btn>
+                  <v-btn
+                    flat
+                    color="background"
+                    v-bind="props"
+                    append-icon="mdi-translate"
+                  >
+                    lang
+                  </v-btn>
                 </template>
 
                 <v-list>
-                  <v-list-item v-for="(item, index) in languages" :key="index">
+                  <v-list-item
+                    v-for="(item, index) in languages"
+                    :key="index"
+                    class="pointer"
+                    :base-color="
+                      item.lang === manager.language ? 'primary' : undefined
+                    "
+                  >
                     <v-list-item-title
                       @click="manager.languageSwitch(item.lang)"
                     >

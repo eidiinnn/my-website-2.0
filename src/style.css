@@ -9,3 +9,7 @@
 .letter-spaced {
    letter-spacing: 0.25rem !important;
 }
+
+.pointer {
+   cursor: pointer !important;
+}
