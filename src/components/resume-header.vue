@@ -6,7 +6,9 @@
           {{ $t("hello") }}
         </h1>
         <h2 class="text-h3 text-uppercase">{{ $t("im") }}</h2>
-        <h3 class="text-h6 font-weight-thin text-medium-emphasis">
+        <h3
+          class="text-h6 font-weight-thin text-medium-emphasis text-capitalize"
+        >
           Front-end {{ $t("developer") }}
         </h3>
       </v-card-item>
