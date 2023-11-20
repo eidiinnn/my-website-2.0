@@ -3,4 +3,5 @@ export default {
   experience: "Experiencia",
   portfolio: "portfólio",
   contact: "contato",
+  developer: "desenvolvedor",
 };

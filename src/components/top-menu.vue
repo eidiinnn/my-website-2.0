@@ -4,7 +4,7 @@
       <v-card-item>
         <div class="d-flex justify-space-between">
           <div class="d-flex gap align-center">
-            <h1 class="text-h6">Eduardo</h1>
+            <h1 class="text-h6 font-weight-bold">Eduardo</h1>
           </div>
           <ul class="link-list gap-large">
             <li
@@ -30,7 +30,7 @@
                     flat
                     color="background"
                     v-bind="props"
-                    append-icon="mdi-translate"
+                    prepend-icon="mdi-translate"
                   >
                     {{
                       languages.find(
@@ -61,7 +61,11 @@
             </li>
 
             <li>
-              <v-icon :icon="themeIcon" @click="manager.themeSwitch()" />
+              <v-icon
+                :icon="themeIcon"
+                size="20"
+                @click="manager.themeSwitch()"
+              />
             </li>
           </ul>
         </div>
