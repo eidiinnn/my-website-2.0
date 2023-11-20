@@ -32,7 +32,11 @@
                     v-bind="props"
                     append-icon="mdi-translate"
                   >
-                    lang
+                    {{
+                      languages.find(
+                        (language) => language.lang === manager.language,
+                      )?.label
+                    }}
                   </v-btn>
                 </template>
 
@@ -46,6 +50,7 @@
                     "
                   >
                     <v-list-item-title
+                      class="text-uppercase"
                       @click="manager.languageSwitch(item.lang)"
                     >
                       {{ item.label }}
@@ -53,6 +58,10 @@
                   </v-list-item>
                 </v-list>
               </v-menu>
+            </li>
+
+            <li>
+              <v-icon :icon="themeIcon" @click="manager.themeSwitch()" />
             </li>
           </ul>
         </div>
@@ -81,6 +90,14 @@ export default {
         { label: "en", lang: "en" },
       ] as languages,
     };
+  },
+
+  computed: {
+    themeIcon() {
+      return this.manager.theme == "dark"
+        ? "mdi-moon-waning-crescent"
+        : "mdi-white-balance-sunny";
+    },
   },
 };
 </script>

@@ -5,8 +5,9 @@
     <v-btn
       color="primary"
       @click="manager.languageSwitch(manager.language === 'en' ? 'ptBr' : 'en')"
-      >language change</v-btn
     >
+      language change
+    </v-btn>
   </div>
 </template>
 
