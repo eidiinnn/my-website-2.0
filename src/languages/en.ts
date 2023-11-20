@@ -4,4 +4,6 @@ export default {
   portfolio: "portfolio",
   contact: "contact",
   developer: "developer",
+  hello: "hello",
+  im: "I'm Eduardo da Silva",
 };
