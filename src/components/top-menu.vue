@@ -14,17 +14,17 @@
                 <li
                   class="text-body-1 text-uppercase font-weight-bold letter-spaced cursor-pointer"
                 >
-                  {{ $t("experience") }}
+                  {{ `./${$t("experience")}` }}
                 </li>
                 <li
                   class="text-body-1 text-uppercase font-weight-bold letter-spaced cursor-pointer"
                 >
-                  {{ $t("portfolio") }}
+                  {{ `./${$t("portfolio")}` }}
                 </li>
                 <li
                   class="text-body-1 text-uppercase font-weight-bold letter-spaced cursor-pointer"
                 >
-                  {{ $t("contact") }}
+                  {{ `./${$t("contact")}` }}
                 </li>
               </ul>
             </div>
@@ -35,7 +35,7 @@
                   <template #activator="{ props }">
                     <v-btn
                       flat
-                      color="background"
+                      color="surface"
                       v-bind="props"
                       icon="mdi-translate"
                     ></v-btn>
@@ -63,7 +63,7 @@
               <li>
                 <v-btn
                   flat
-                  color="background"
+                  color="surface"
                   :icon="themeIcon"
                   @click="manager.themeSwitch()"
                 ></v-btn>

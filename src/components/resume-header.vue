@@ -44,7 +44,7 @@
   right: 0;
   width: 100%;
   height: 100vh;
-  opacity: 0.13;
+  opacity: 0.12;
   z-index: 0;
 }
 
