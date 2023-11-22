@@ -1,19 +1,21 @@
 <template>
   <header class="main-header gap-large">
-    <v-card flat color="transparent">
-      <v-card-item>
-        <h1 class="text-h1 text-primary text-uppercase font-weight-black">
-          {{ $t("hello") }}
-        </h1>
-        <h2 class="text-h3 text-uppercase">{{ $t("im") }}</h2>
-        <h3
-          class="text-h7 font-weight-thin text-medium-emphasis text-uppercase"
-        >
-          Front-end {{ $t("developer") }}
-        </h3>
-      </v-card-item>
-    </v-card>
-    <img src="/meInPixel.png" class="me-in-pixels" />
+    <div class="md-container d-flex align-center justify-space-between">
+      <v-card flat color="transparent">
+        <v-card-item>
+          <h1 class="text-h1 text-primary text-uppercase font-weight-black">
+            {{ $t("hello") }}
+          </h1>
+          <h2 class="text-h3 text-uppercase">{{ $t("im") }}</h2>
+          <h3
+            class="text-h7 font-weight-thin text-medium-emphasis text-uppercase"
+          >
+            Front-end {{ $t("developer") }}
+          </h3>
+        </v-card-item>
+      </v-card>
+      <img src="/meInPixel.png" class="me-in-pixels" />
+    </div>
   </header>
 </template>
 
@@ -42,13 +44,13 @@
   right: 0;
   width: 100%;
   height: 100vh;
-  opacity: 0.02;
+  opacity: 0.13;
   z-index: 0;
 }
 
 .me-in-pixels {
-  width: 25%;
-  max-width: 350px;
+  width: 40%;
+  /* max-width: 350px; */
   height: auto;
   object-fit: contain;
 }

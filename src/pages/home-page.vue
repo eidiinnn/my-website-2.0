@@ -1,9 +1,9 @@
 <template>
   <div class="d-flex gap flex-column">
+    <resume-header />
     <div class="floating-menu">
       <top-menu />
     </div>
-    <resume-header />
   </div>
 </template>
 
@@ -13,6 +13,5 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 200;
 }
 </style>

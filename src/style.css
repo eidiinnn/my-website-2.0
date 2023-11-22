@@ -19,5 +19,9 @@
 }
 
 .md-container {
-   width: 1300px;
+   width: 1200px;
+}
+
+.shadow {
+   box-shadow: rgba(0, 0, 8, 0.2) 0px 7px 29px 0px;
 }
