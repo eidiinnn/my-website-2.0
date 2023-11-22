@@ -1,28 +1,32 @@
 <template>
-  <nav>
-    <v-card width="100%" flat color="background">
+  <nav class="md-container">
+    <v-card width="100%" flat color="transparent">
       <v-card-item>
-        <div class="d-flex justify-space-between">
-          <div class="d-flex gap align-center">
-            <h1 class="text-h6 font-weight-bold">Eduardo</h1>
+        <div class="d-flex w-100 justify-space-between">
+          <div class="d-flex gap-large align-center">
+            <h1 class="text-h6 font-weight-bold text-uppercase text-secondary">
+              Eduardo
+            </h1>
+            <ul class="link-list gap-large ml-5">
+              <li
+                class="text-body-1 text-uppercase font-weight-bold letter-spaced cursor-pointer"
+              >
+                {{ $t("experience") }}
+              </li>
+              <li
+                class="text-body-1 text-uppercase font-weight-bold letter-spaced cursor-pointer"
+              >
+                {{ $t("portfolio") }}
+              </li>
+              <li
+                class="text-body-1 text-uppercase font-weight-bold letter-spaced cursor-pointer"
+              >
+                {{ $t("contact") }}
+              </li>
+            </ul>
           </div>
-          <ul class="link-list gap-large">
-            <li
-              class="text-body-2 text-uppercase font-weight-bold letter-spaced"
-            >
-              {{ $t("experience") }}
-            </li>
-            <li
-              class="text-body-2 text-uppercase font-weight-bold letter-spaced"
-            >
-              {{ $t("portfolio") }}
-            </li>
-            <li
-              class="text-body-2 text-uppercase font-weight-bold letter-spaced"
-            >
-              {{ $t("contact") }}
-            </li>
 
+          <ul class="link-list gap">
             <li>
               <v-menu open-on-hover>
                 <template #activator="{ props }">
@@ -30,14 +34,8 @@
                     flat
                     color="background"
                     v-bind="props"
-                    prepend-icon="mdi-translate"
-                  >
-                    {{
-                      languages.find(
-                        (language) => language.lang === manager.language,
-                      )?.label
-                    }}
-                  </v-btn>
+                    icon="mdi-translate"
+                  ></v-btn>
                 </template>
 
                 <v-list>
@@ -59,13 +57,13 @@
                 </v-list>
               </v-menu>
             </li>
-
             <li>
-              <v-icon
+              <v-btn
+                flat
+                color="background"
                 :icon="themeIcon"
-                size="20"
                 @click="manager.themeSwitch()"
-              />
+              ></v-btn>
             </li>
           </ul>
         </div>
@@ -108,12 +106,12 @@ export default {
 
 <style scoped>
 nav {
-  width: 80%;
   margin: 0 auto;
 }
 .link-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   list-style: none;
 }

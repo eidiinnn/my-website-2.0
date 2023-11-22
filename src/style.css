@@ -10,6 +10,14 @@
    letter-spacing: 0.25rem !important;
 }
 
-.pointer {
+.pointer, .cursor-pointer {
    cursor: pointer !important;
+}
+
+.bottom-border {
+   border-bottom: 0.1px solid rgb(var(--v-theme-on-surface), 0.1);
+}
+
+.md-container {
+   width: 1300px;
 }

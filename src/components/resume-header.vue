@@ -1,13 +1,13 @@
 <template>
-  <header class="main-header">
-    <v-card flat color="background">
+  <header class="main-header gap-large">
+    <v-card flat color="transparent">
       <v-card-item>
         <h1 class="text-h1 text-primary text-uppercase font-weight-black">
           {{ $t("hello") }}
         </h1>
         <h2 class="text-h3 text-uppercase">{{ $t("im") }}</h2>
         <h3
-          class="text-h6 font-weight-thin text-medium-emphasis text-capitalize"
+          class="text-h7 font-weight-thin text-medium-emphasis text-uppercase"
         >
           Front-end {{ $t("developer") }}
         </h3>
@@ -19,14 +19,31 @@
 
 <script></script>
 
-<style scoped>
+<style>
 .main-header {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
+}
+.main-header * {
+  z-index: 2;
+}
+.main-header::after {
+  content: "";
+  background-image: url("/background-header.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.02;
+  z-index: 0;
 }
 
 .me-in-pixels {
