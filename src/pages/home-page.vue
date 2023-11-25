@@ -1,9 +1,11 @@
 <template>
-  <div class="d-flex gap flex-column">
+  <div class="d-flex gap-extra-large flex-column">
     <resume-header />
     <div class="floating-menu">
       <top-menu />
     </div>
+
+    <experience-section />
   </div>
 </template>
 

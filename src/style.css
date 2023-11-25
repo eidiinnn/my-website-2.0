@@ -6,6 +6,10 @@
    gap: 20px;
 }
 
+.gap-extra-large {
+   gap: 60px;
+}
+
 .letter-spaced {
    letter-spacing: 0.25rem !important;
 }
