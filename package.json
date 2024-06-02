@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@volar/language-server": "^2.1.0",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.0",
     "vue": "^3.3.4",
@@ -26,7 +27,7 @@
     "eslint-plugin-vue": "^9.18.1",
     "material-design-icons-iconfont": "^6.7.0",
     "prettier": "^3.0.3",
-    "typescript": "^5.0.2",
+    "typescript": "^5.3.3",
     "vite": "^4.4.5",
     "vue-tsc": "^1.8.5"
   }
